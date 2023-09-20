@@ -12,7 +12,7 @@ lives = 6
 print(logo)
 
 # Testing code
-print(f"Pssst, the solution is {chosen_word}.")
+# print(f"Pssst, the solution is {chosen_word}.")
 
 while "_" in display:
     guess = input("Guess a letter: ").casefold()
@@ -33,7 +33,7 @@ while "_" in display:
     print(stages[lives])
 
     if lives == 0:
-        print("You lose.")
+        print(f"You lose.\nThe word is {chosen_word}.")
         break
 else:
-    print("You win!")
+    print(f"You win!\nThe word is {chosen_word}.")
